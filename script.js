@@ -64,12 +64,6 @@ $(function() {
 	    return('<li>' + value + '</li>');
 	});
 	$("#myid").html(newHTML.join(""));
-
-	var newHTML2 = $.map(przepisyBaza, function(value) {
-	    return('<div>' + value + '</div>');
-	});
-	$("#przepisy-kontener").html(newHTML2.join(""));
-	console.log(przepisyBaza);
 	/////////////////// Dodawanie id do <li>
 	var i=0;
 		$('li').each(function(){
@@ -90,25 +84,7 @@ $(function() {
 	});
 
 	$('.search').click(function(){
-		
-    	var find = produktArray;
-		var przepisy = $.map(dayArr, function(value, key) {
-		     if (value.tytul == find)
-		     {
-		        return value.skladniki;
-		     }
-		});
-		console.log(przepisy);
-		/*
-		var find = produktArray;
-		var przepisy = $.map(dayArr, function(value, key) {
-		     if (value.skladniki == find)
-		     {
-		        return value.przepis;
-		     }
-		});
-		console.log(przepisy);
-		*/
+        
 	});
 		
 })

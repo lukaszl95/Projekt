@@ -64,7 +64,7 @@ var bazaSkladnikow = [
 'wino czerwone słodkie',
 'wino czerwone wytrawne',
 'woda mineralna',
-'wódka czysta',
+'wódka',
 
 ////////////          OWOCE          ////////////
 'agrest',
@@ -120,12 +120,20 @@ var bazaSkladnikow = [
 'wiśnie suszone',
 'żurawina',
 ];
-var przepisyBaza = [
-['Russian apple', ['wódka, sok żurawinowy, sok ananasowy, kostki lodu'] ,'Do shakera wrzucamy kilka kostek lodu. Wlewamy wszystkie trzy składniki i dokładnie wstrząsamy. Następnie rozlewamy wszystko do kieliszków.'],
-['Russian apple', ['wódka, sok żurawinowy, sok ananasowy, kostki lodu'] ,'Do shakera wrzucamy kilka kostek lodu. Wlewamy wszystkie trzy składniki i dokładnie wstrząsamy. Następnie rozlewamy wszystko do kieliszków.'],
-
-];
 var dayArr = Array( 
 	{ "tytul" : "Russian apple", "skladniki" : ["wódka", "sok żurawinowy", "sok ananasowy", "kostki lodu"], "przepis" : "Do shakera wrzucamy kilka kostek lodu. Wlewamy wszystkie trzy składniki i dokładnie wstrząsamy. Następnie rozlewamy wszystko do kieliszków." }, 
-	{ "tytul" : "ASD", "skladniki" : "wódka, sok żurawinowy, sok ananasowy, kostki lodu", "przepis" : "Do shakera wrzucamy kilka kostek lodu. Wlewamy wszystkie trzy składniki i dokładnie wstrząsamy. Następnie rozlewamy wszystko do kieliszków." }
 	);
+var myObjects = [
+        {
+            tytul: "Russian apple",
+            skladniki: ["wódka", "sok żurawinowy", "sok ananasowy", "kostki lodu"],
+            przepis: "Do shakera wrzucamy kilka kostek lodu. Wlewamy wszystkie trzy składniki i dokładnie wstrząsamy. Następnie rozlewamy wszystko do kieliszków."
+        },
+        {
+            tytul: "Blue shark",
+            skladniki: ["wódka", "tequila ", "likier blue curacao", "kruszony lód"],
+            przepis: "Do shakera wrzuć kruszony lód. Wlej wszystkie składniki i dokładnie wstrząśnij. Zawartość shakera (wraz z lodem) przelej do szklanki typu old-fashioned."
+        }
+    ];
+
+		
