@@ -53,6 +53,7 @@ var bazaSkladnikow = [
 'szampan półsłodki',
 'szampan półwytrawny',
 'szampan słodki',
+'tequila',
 'tonik',
 'whisky',
 'wino białe musujące',
@@ -120,20 +121,18 @@ var bazaSkladnikow = [
 'wiśnie suszone',
 'żurawina',
 ];
-var dayArr = Array( 
-	{ "tytul" : "Russian apple", "skladniki" : ["wódka", "sok żurawinowy", "sok ananasowy", "kostki lodu"], "przepis" : "Do shakera wrzucamy kilka kostek lodu. Wlewamy wszystkie trzy składniki i dokładnie wstrząsamy. Następnie rozlewamy wszystko do kieliszków." }, 
-	);
-var myObjects = [
-        {
-            tytul: "Russian apple",
-            skladniki: ["wódka", "sok żurawinowy", "sok ananasowy", "kostki lodu"],
-            przepis: "Do shakera wrzucamy kilka kostek lodu. Wlewamy wszystkie trzy składniki i dokładnie wstrząsamy. Następnie rozlewamy wszystko do kieliszków."
-        },
-        {
-            tytul: "Blue shark",
-            skladniki: ["wódka", "tequila ", "likier blue curacao", "kruszony lód"],
-            przepis: "Do shakera wrzuć kruszony lód. Wlej wszystkie składniki i dokładnie wstrząśnij. Zawartość shakera (wraz z lodem) przelej do szklanki typu old-fashioned."
-        }
-    ];
-
-		
+bazaSkladnikow.sort();
+var bazaPrzepisow = [
+    {
+    	kategoria: "Drink",
+       	tytul: "Russian apple",
+		skladniki: ["wódka", "sok żurawinowy", "sok ananasowy", "kostki lodu"],
+		przepis: "Do shakera wrzucamy kilka kostek lodu. Wlewamy wszystkie trzy składniki i dokładnie wstrząsamy. Następnie rozlewamy wszystko do kieliszków."
+	},
+	{
+		kategoria: "Drink",
+		tytul: "Blue shark",
+		skladniki: ["wódka", "tequila", "likier blue curacao", "kruszony lód"],
+		przepis: "Do shakera wrzuć kruszony lód. Wlej wszystkie składniki i dokładnie wstrząśnij. Zawartość shakera (wraz z lodem) przelej do szklanki typu old-fashioned."
+	}
+];

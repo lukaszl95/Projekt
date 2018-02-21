@@ -64,6 +64,7 @@ $(function() {
 	    return('<li>' + value + '</li>');
 	});
 	$("#myid").html(newHTML.join(""));
+
 	/////////////////// Dodawanie id do <li>
 	var i=0;
 		$('li').each(function(){
@@ -82,11 +83,26 @@ $(function() {
 		var column = new Column(produkt);
     	board.addColumn(column);
 	});
-
-	$('.search').click(function(){
-        
+	/////////////////// Szukanie przepisu
+	$('.btn-search').click(function(){
+		$("#lista-przepisow").empty();
+	    new search();
 	});
-		
+	function search() {
+		for (var i = 0; i < produktArray.length; i++) {
+			var skladnik = produktArray[i]; 
+			console.log(skladnik);
+			for (var i = 0; i < bazaPrzepisow.length; i++) {
+			  	var czyZawiera = bazaPrzepisow[i].skladniki.includes(skladnik);
+			  	if (czyZawiera) {
+			    	document.getElementById("lista-przepisow").innerHTML += "<div class='col-4'>" + "<div class='przepis-kontener'>" +"<h2 class='tytul'>" + bazaPrzepisow[i].tytul + "</h2>" + "<p class='kategoria'>" + bazaPrzepisow[i].kategoria + "</p>" + "<p class='skladniki'>" + bazaPrzepisow[i].skladniki + "</p>" + "<p class='przepis'>" + bazaPrzepisow[i].przepis + "</p>" + "</div>" + "</div>";
+			  	} 
+			}	
+			if (czyZawiera == 0){
+			  	document.getElementById("lista-przepisow").innerHTML += "<h2 class='brak-przepisu'>" + "Brak przepisu" + "</h2>"
+			}
+		}
+	};
 })
 
 $('.textInput').on("input", function () {

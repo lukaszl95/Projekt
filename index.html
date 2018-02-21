@@ -2,21 +2,29 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Kanban board</title>
+    <title>Wyszukiwarka przepisów</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="board" class="board">
         <h2>Wyszukiwarka przepisów</h2>
-        <p>Dodaj składniki</p>
-        <input type="text" class="textInput columnTitle"/>
-        <ul class="katlista" id="myid">
-           
-        </ul>
-        <button class="create-column add-column">Dodaj</button>
-        <div class="column-container row"></div>
-        <button class="search">Szukaj przepisu</button>
-        <div class="recipe-container row" id="przepisy-kontener">
+        <div class="row">
+            <div class="produkts-contener col-4">
+                <p>Dodaj składniki</p>
+                <input type="text" class="textInput columnTitle"/>
+                <ul id="myid">
+                   
+                </ul>
+                <button class="create-column add-column">Dodaj</button>
+            </div>
+            <div class="column-container col-8"></div>
+        </div>
+        <button class="btn-search" id="search">Szukaj przepisu</button>
+        <button class="btn-napoje" id="napoje">Napoje</button>
+        <div class="row">
+            <div id="lista-przepisow" class="row">
+
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
